@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Poor Story');
 @import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
 
 html,
@@ -10,18 +10,35 @@ html,
     }
 
     body{
-      text-align: center;
-      background: #eee;
+        text-align: center;
+        /*gradient background*/
+        background: linear-gradient(82deg,#88f3c2,#95ac9d,#ded3b6,#66c969,#26735d,#dead88);
+        background-size: 360% 360%;
+        animation: gradient-animation 30s ease infinite;
     }
+
+    /* background animation */  
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
     .container{
       width: calc(1920px * 0.5);
       display: inline-block;
       padding: 20px;
       margin: 20px;
       text-align: left;
-      background: #fff;
+      background: #95ac9d;
       box-shadow: 0 0 4px 2px #ccc;
-      font-family: Arial;
+      font-family: 'Roboto Condensed';
     }
     @media screen and (max-width:1200px) {
       .container{
@@ -40,7 +57,8 @@ html,
     }
     h1{
       text-align: center;
-      font-size: 40px;
+      font-size: 60px;
+      font-family: 'Poor Story';
     }
     .todo{
       font-size: 30px;
@@ -55,7 +73,7 @@ html,
     }
     .todo .list-item::before{
       content: "\f111";
-      font-family: "Font Awesome 5 Free";
+      /* font-family: "Font Awesome 5 Free"; */
       font-size: 14px;
       vertical-align: middle;
       margin: -7px;
@@ -98,7 +116,7 @@ html,
     }
     input[type=button]{
       color: #fff;
-      background: #75b7ef;
+      background: #013220;
       padding: 10px 20px;
       border-radius: 5px;
       font-size: 20px;
