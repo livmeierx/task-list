@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poor Story');
-@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
+@import url('https://fonts.googleapis.com/css?family=Kanit');
 
 html,
     body {
@@ -38,7 +38,7 @@ html,
       text-align: left;
       background: #95ac9d;
       box-shadow: 0 0 4px 2px #ccc;
-      font-family: 'Roboto Condensed';
+      font-family: 'Kanit';
     }
     @media screen and (max-width:1200px) {
       .container{
@@ -74,6 +74,7 @@ html,
     .todo .list-item::before{
       content: "\f111";
       /* font-family: "Font Awesome 5 Free"; */
+      font-family: 'Kanit';
       font-size: 14px;
       vertical-align: middle;
       margin: -7px;
@@ -114,7 +115,7 @@ html,
       font-size: 20px;
       width: calc(100% - 10px * 2);
     }
-    input[type=button]{
+    input[type=button] {
       color: #fff;
       background: #013220;
       padding: 10px 20px;
@@ -124,6 +125,7 @@ html,
       text-align: center;
       -moz-appearance: none;
       -webkit-appearance: none;
+      font-family: 'Kanit';
     }
     @media screen and (max-width:900px) {
       .close{
